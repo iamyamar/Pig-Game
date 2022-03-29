@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Shizuru&family=Ubuntu:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  /* font-family: "Shizuru", cursive; */
+}
+
+body {
+  background: rgb(89, 126, 131);
+  background: linear-gradient(
+    318deg,
+    rgba(89, 126, 131, 1) 0%,
+    rgba(197, 156, 202, 1) 0%,
+    rgba(147, 146, 173, 1) 28%,
+    rgba(220, 74, 230, 1) 59%,
+    rgba(255, 0, 211, 1) 91%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  height: 80vh;
+  width: 90vw;
+  /* border-radius: 10px; */
+  /* max-width: 90vmax; */
+  position: relative;
+}
+.back {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  /* position: relative; */
+  /* padding: absolute; */
+  /* width: 100%; */
+}
+.player1 {
+  /* padding: absolute; */
+
+  padding: 20px;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h4 {
+  font-size: 2rem;
+  margin-top: 30px;
+}
+.score {
+  margin-top: 80px;
+  font-size: 6rem;
+  font-weight: 800;
+  color: rgb(190, 0, 181);
+}
+
+.scoreadd {
+  color: white;
+
+  margin-top: auto;
+  margin-bottom: 90px;
+  background-color: blueviolet;
+  height: 85px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 5px 10px 18px #888888;
+}
+.current {
+  /* font-weight: bolder; */
+  font-size: 1.15rem;
+}
+.curscore {
+  font-weight: bolder;
+  font-size: 1.8rem;
+  margin-top: 10px;
+}
+
+.player2 {
+  padding: absolute;
+  padding: 20px;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.win {
+  color: rgb(190, 0, 181);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.middle {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  top: 0;
+  right: 35%;
+  padding: 80;
+  /* background-color: black; */
+  margin-top: 40px;
+}
+
+.newgame {
+  border: none;
+  width: 50%;
+  border-radius: 30px;
+  padding: 10px;
+  font-weight: 800;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: transform 0.01s ease-in;
+}
+
+.newgame:active {
+  transform: scale(0.9);
+}
+.dice {
+  margin-top: 60px;
+  width: 100px;
+  height: 100px;
+  /* background-color: black; */
+}
+.roll {
+  margin-top: 150px;
+  border: none;
+  width: 50%;
+  border-radius: 30px;
+  font-weight: 800;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: transform 0.01s ease-in;
+}
+.roll:active {
+  transform: scale(0.9);
+}
+.hold {
+  margin-top: 30px;
+  border: none;
+  width: 50%;
+  border-radius: 30px;
+  font-weight: 800;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: transform 0.01s ease-in;
+}
+.hold:active {
+  transform: scale(0.9);
+}
